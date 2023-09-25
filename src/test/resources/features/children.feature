@@ -1,6 +1,7 @@
-Feature: Login to "www.buybooksindia.com"
+Feature: Children and Young Adults Section on "www.buybooksindia.com"
 
-  Scenario: Browsing Drawing and Coloring Books
+
+ Scenario: Browsing Drawing and Coloring Books
     Given user is  on homepage of www.buybooksindia.com
     And sort for newest
     Then select the book
@@ -19,3 +20,5 @@ Scenario: Browsing Essays and Letters
     And sort for Letter:A-Z
     Then select the book
     Then add to cart
+
+    
