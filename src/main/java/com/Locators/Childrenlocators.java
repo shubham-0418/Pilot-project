@@ -20,8 +20,6 @@ public class Childrenlocators {
 	
 	@FindBy(xpath=("//h1[@class='page-heading']//child::span"))
 	public static WebElement clickonpoem;
-
-	public Object addProducttoCart;
 	
 
 }
