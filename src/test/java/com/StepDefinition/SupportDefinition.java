@@ -8,7 +8,7 @@ public class SupportDefinition {
 	@Given("User Should be on HomePage\"https:\\/\\/www.buybooksindia.com\\/\"")
 	public void user_should_be_on_home_page_https_www_buybooksindia_com() {
 	    // Write code here that turns the phrase above into concrete actions
- 
+		
 	}
 
 	@When("User Navigates to Support and Clicks on Terms and condition")
