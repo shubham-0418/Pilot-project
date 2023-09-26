@@ -14,7 +14,7 @@ public class LoginPageDefination {
 
 	@Given("user should be on login page {string}")
 	public void user_should_be_on_login_page(String string) {
-		HelperClass.openPage(string);
+		HelperClass.openpage(string);
 	}
 
 	@When("user enter the mobile number and click on generate otp")
