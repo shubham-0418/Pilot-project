@@ -78,7 +78,7 @@ public class CompanyAction {
 	
 	//Method for PublisherDetails
 	public void EnterPublisherDetails() {
-		File file = new File("C:\\Users\\sangadi\\eclipse-workspace\\BuyBooksIndia\\src\\test\\resources\\PropertiesFile\\PublisherDetails.properties");
+		File file = new File("src\\test\\resources\\PropertiesFile\\PublisherDetails.properties");
 		FileInputStream fileInput = null;
 		try {
 			fileInput = new FileInputStream(file); 
@@ -136,7 +136,7 @@ public class CompanyAction {
 	}
 	
 	public void EnterContactDeatils() {
-		File file1 = new File("C:\\Users\\sangadi\\eclipse-workspace\\BuyBooksIndia\\src\\test\\resources\\PropertiesFile\\ContactUsDetails.properties");
+		File file1 = new File("src\\test\\resources\\PropertiesFile\\ContactUsDetails.properties");
 		FileInputStream fileInput1 = null;
 		try {
 			fileInput1 = new FileInputStream(file1); 
@@ -174,7 +174,7 @@ public class CompanyAction {
 	public void readPrivacyPolicy() {
 		String policyTxt = companyLocators.privacyTxt.getText();
 		try {
-			PrintStream ps = new PrintStream(new File("C:\\Users\\sangadi\\Desktop\\test\\TextFile\\PrivacyPolicy.txt"));
+			PrintStream ps = new PrintStream(new File("src\\test\\resources\\PrivacyPolicy\\PrivacyPolicy.txt"));
 			System.setOut(ps);
 			ps.println(policyTxt);
 		}
