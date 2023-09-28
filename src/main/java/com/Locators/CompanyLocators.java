@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CompanyLocators {
+	
+    // WebElements representing various elements on the company's website
 	@FindBy(linkText = "About Us") public WebElement aboutus;
 	
 	@FindBy(xpath = "//div[@class='content-text']") public WebElement assertaboutus;

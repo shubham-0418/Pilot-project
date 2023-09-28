@@ -7,21 +7,26 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Locators.CompanyLocators;
 import com.util.HelperClass;
 
+
 public class CompanyAction {
 	CompanyLocators companyLocators = null;
 	String publisherName,publisherCity,publisherEmail,publisherContact,publisherMobile,publisherPhone,publisherSubject,publisherComment;
 	
+	//Implementing ActionClass for Company
 	public CompanyAction() {
 		this.companyLocators = new CompanyLocators();
 		PageFactory.initElements(HelperClass.getDriver(), companyLocators);
 	}
 	
 	public void clickonAboutUs() {
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", companyLocators.aboutus);
 		companyLocators.aboutus.click();
 	}
 	
@@ -30,6 +35,8 @@ public class CompanyAction {
 	}
 	
 	public void clickonPublisherPartner() {
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", companyLocators.publisherpartner);
 		companyLocators.publisherpartner.click();
 	}
 	
@@ -69,6 +76,7 @@ public class CompanyAction {
 		companyLocators.publisherSubmit.click();
 	}
 	
+	//Method for PublisherDetails
 	public void EnterPublisherDetails() {
 		File file = new File("C:\\Users\\sangadi\\eclipse-workspace\\BuyBooksIndia\\src\\test\\resources\\PropertiesFile\\PublisherDetails.properties");
 		FileInputStream fileInput = null;
@@ -106,6 +114,8 @@ public class CompanyAction {
 	}
 	
 	public void clickonContactUs() {
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", companyLocators.contactus);
 		companyLocators.contactus.click();
 	}
 	
@@ -157,12 +167,14 @@ public class CompanyAction {
 	}
 	
 	public void clickonPrivacyPolicy() {
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", companyLocators.privacyplcy);
 		companyLocators.privacyplcy.click();
 	}
 	public void readPrivacyPolicy() {
 		String policyTxt = companyLocators.privacyTxt.getText();
 		try {
-			PrintStream ps = new PrintStream(new File("C:\\Users\\sangadi\\Desktop\\BuyBooksIndia\\TextFile\\PrivacyPolicy.txt"));
+			PrintStream ps = new PrintStream(new File("C:\\Users\\sangadi\\Desktop\\test\\TextFile\\PrivacyPolicy.txt"));
 			System.setOut(ps);
 			ps.println(policyTxt);
 		}
@@ -172,6 +184,8 @@ public class CompanyAction {
 	}
 	
 	public void clickonDisclaimer() {
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", companyLocators.disclaimer);
 		companyLocators.disclaimer.click();
 	}
 	public String validateDisclaimer() {
