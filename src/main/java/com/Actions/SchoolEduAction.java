@@ -112,7 +112,7 @@ public class SchoolEduAction {
 		Thread.sleep(1000);
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		File src = ((TakesScreenshot)HelperClass.getDriver()).getScreenshotAs(OutputType.FILE);
-		Files.copy(src,new File("C:\\Users\\sangadi\\eclipse-workspace\\BuyBooksIndia\\Screenshots\\DiscLowtotHigh.png") );
+		Files.copy(src,new File("src/test/resources/Screenshots/DiscLowtotHigh.png") );
 		
 	}
 	

@@ -1,0 +1,127 @@
+The policy pertains to how BuyBooksIndia treats personal information that is collected and received, not available publicly. BuyBooksIndia collects personal information on registration on platform, buying products or visiting pages. We have access to your name, address, email address, phone number, zip/ pin code, and other such details. Besides this, BuyBooksIndia automatically receives and records information on our server logs from your browser, including IP address, page request etc. The information is used solely for advertising and content visibility, to fulfill your product and service requests, improve our services, or sending emails containing advertisements/ newsletters/ notification on behalf of external clients. BuyBooksIndia does not provide any personal information to advertisers when you view a targeted ad. By interacting with the advertiser, you are consenting to the possibility that the advertiser will make the assumption that you meet the targeting criteria and the advertiser may, therefore, contact you based on the data gathered by him, solely consequent to your interactions with him, for which BuyBooksIndia assumes no responsibility, whatsoever. Our advertisers may include educational institutions, private coaching institutes, teachers, book sellers / stores, publishers, authors, software companies and other Companies, who may have potential business interest in the targeted members / visitors of BuyBooksIndia. BuyBooksIndia does not rent, sell, or share personal information about you with third parties, except when specifically informed to you at the time of collection of the information and / or to provide products or services you've requested, when we have your permission, or under the following circumstances: We provide the information to trusted partners who work on behalf of or with BuyBooksIndia under confidentiality agreements for the purpose of creating / modifying / maintaining the site. However, these companies do not have any independent right to share / use this information for any other purpose, except for that specifically authorised by BuyBooksIndia. We respond to court orders, or legal process, or to establish or exercise our legal rights or defend against legal claims; We believe it is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of BuyBooksIndia terms of use, or as otherwise required by law. We transfer information about you if BuyBooksIndia is acquired by or merged with another company. In this event, BuyBooksIndia will notify you before information becomes subject to a different privacy policy. Finally, we never use or share the personally identifiable information provided to us online, in ways or for reasons unrelated to the ones described above. You can edit your BuyBooksIndia Account Information at any time. We reserve the right to send you certain communications relating to BuyBooksIndia services or sponsored advertisements, such as service announcements, administrative messages and BuyBooksIndia. Newsletters are considered a part of your BuyBooksIndia account, without offering you the opportunity to stop receiving them. We have physical, electronic, and procedural safeguards to protect personal information about you and your BuyBooksIndia Account Information is password-protected. BuyBooksIndia may update this policy from time to time. We may notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your BuyBooksIndia account or by placing a notice on our site for a reasonable period of time..
+Rs 35
+Rs 35
+Rs 40
+Rs 59
+Rs 59
+Rs 59
+Rs 59
+Rs 69
+Rs 70
+Rs 70
+Rs 75
+Rs 75
+50%
+OFF
+45%
+OFF
+40%
+OFF
+40%
+OFF
+40%
+OFF
+40%
+OFF
+37%
+OFF
+35%
+OFF
+34%
+OFF
+34%
+OFF
+33%
+OFF
+33%
+OFF
+Shipping Policy
+Return Policy
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Update Account Information", "Login Using Mobile number and otp")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Validate the Privacy Policy", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ReturnPolicy feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Login", "Login Using Mobile number and otp")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates the Terms and condition feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Validate the Disclaimer Page", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books for class6", "Navigate to School Education")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates the About Us feature", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Fill the Details of Publisher Company", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Fill the Detials in ContactUs Page", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates How to Order feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Poems and  Rhymes", "Children and Young Adults Section on webpage")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Essays and Letters", "Children and Young Adults Section on webpage")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User validates the My wishlist", "Validating the wishlist")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books and print price of books for class10", "Navigate to School Education")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ShippingandDelivery feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Drawing and Coloring Books", "Children and Young Adults Section on webpage")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Validating Cart and Deleting Item in Cart", "Children and Young Adults Section on webpage")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Manage Address", "Login Using Mobile number and otp")
+        Runs Cucumber Scenarios
+FAILED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("False Login", "Login Using Mobile number and otp")
+        Runs Cucumber Scenarios
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//strong[text()="Account Information"]"}
+  (Session info: chrome=117.0.5938.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7aeba10583174dd3530881ae87f0eeaf, findElement {using=xpath, value=//strong[text()="Account Information"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\shupatil\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59640/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7aeba10583174dd3530881ae87f0eeaf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.getText(Unknown Source)
+	at com.Actions.LoginActions.loginSuccess(LoginActions.java:47)
+	at com.StepDefinition.LoginPageDefination.validate_the_user_login(LoginPageDefination.java:50)
+	at ✽.Validate the User Login(file:///C:/Users/shupatil/eclipse-workspace/BuyBooksIndia/src/test/resources/FeatureFile/Login.feature:7)
+
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 1, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 22, Passes: 21, Failures: 1, Skips: 0
+===============================================
+
