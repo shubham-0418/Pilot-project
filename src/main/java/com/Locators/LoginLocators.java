@@ -13,9 +13,11 @@ public class LoginLocators {
 	@FindBy(xpath = "//a[text()=\" Login\"]")
 	public WebElement btnLogin;
 	
+	//Locator for MobileNumber
 	@FindBy(xpath = "//*[@id=\"reg_phone\"]")
 	public WebElement MobileNumber;
 	
+	//Locator for OTP
 	@FindBy(xpath = "//*[@id=\"otp\"]")
 	public WebElement GenerateOTP;
 	

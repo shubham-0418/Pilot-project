@@ -1,17 +1,15 @@
 package com.Locators;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SchoolEduLocators {
 	
+
     // WebElements representing various elements on the School Education page
+
 	@FindBy(linkText = "School Education")
 	public WebElement schoolEdu;
-	// = driver.findElement(By.linkText("School Education"));
-//	public WebElement sortprice = driver.findElement(By.xpath("//span[@class='price product-price']"));
 	
 	@FindBy(linkText = "Shop by Class") 
 	public WebElement shopclass;
@@ -33,9 +31,7 @@ public class SchoolEduLocators {
 	
 	@FindBy(xpath = "//option[contains(text(),'Price : Low to High')]") 
 	public WebElement LowtoHigh;
-	
-	//@FindBy(xpath = "//span[@class='price product-price']") public WebElement sortprice;
-	
+		
 	@FindBy(partialLinkText = "Shop by Boa") 
 	public WebElement shopboard;
 	
@@ -47,13 +43,6 @@ public class SchoolEduLocators {
 	
 	@FindBy(xpath = "//option[contains(text(),'Discount : High to Low')]") 
 	public WebElement DHightoLow;
-	
-//	@FindBy(xpath = "//div[@class='price-percent-reduction3']") public WebElement sortDHL;
-	
-	
-	
-	
-	
 	
 
 }

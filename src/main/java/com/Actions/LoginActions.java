@@ -13,23 +13,32 @@ import com.util.HelperClass;
 public class LoginActions {
 	LoginLocators loginLocators = null;
 
+
 	 // Constructor initializes loginLocators and sets up PageFactory
+
+	//Login the page
+
 	public LoginActions() {
 		this.loginLocators = new LoginLocators();
 		PageFactory.initElements(HelperClass.getDriver(), loginLocators);		
 	}
+
 	
 	 // Clicks the "Login" button
 	public void clickLogin() {
 		loginLocators.btnLogin.click();
 	}
 	
+
 	// Enters a mobile number
+
 	public void EnterNumber() {
 		loginLocators.MobileNumber.sendKeys("8050511235");
 	}
 	
+
 	// Clicks the "Generate OTP" button
+
 	public void ClickGenerateOTP() {
 		loginLocators.GenerateOTP.click();
 	}
@@ -49,7 +58,12 @@ public class LoginActions {
 		return loginLocators.LoginSuccess.getText();
 	}
 	
+
 	 // Performs the complete login process
+
+	
+	//Login Page, Enter MobileNumber, Enter OTP
+
 	public void Login() {
 		this.clickLogin();
 		this.EnterNumber();
