@@ -12,64 +12,66 @@ import com.util.HelperClass;
 
 public class LoginActions {
 	LoginLocators loginLocators = null;
-
-
-	 // Constructor initializes loginLocators and sets up PageFactory
-
-	//Login the page
+	static String MobileNumber = "8050511235";
+	static String OTP;
 
 	public LoginActions() {
 		this.loginLocators = new LoginLocators();
 		PageFactory.initElements(HelperClass.getDriver(), loginLocators);		
 	}
-
 	
-	 // Clicks the "Login" button
 	public void clickLogin() {
 		loginLocators.btnLogin.click();
 	}
 	
-
-	// Enters a mobile number
-
 	public void EnterNumber() {
-		loginLocators.MobileNumber.sendKeys("8050511235");
+		loginLocators.MobileNumber.sendKeys(MobileNumber);
 	}
 	
-
-	// Clicks the "Generate OTP" button
-
 	public void ClickGenerateOTP() {
 		loginLocators.GenerateOTP.click();
 	}
 	
-	// Sets the OTP by fetching it from the page
-	public void setOtP() {
-		loginLocators.OTP.sendKeys(loginLocators.GetOTP().getText());
+	public String getOtp() {
+		return loginLocators.GetOTP().getText();
+	}
+	public void setOtP(String otp) {
+		loginLocators.OTP.sendKeys(otp);
 	}
 	
-	// Clicks the "Login" button after entering the OTP
 	public void ClickToLogin() {
 		loginLocators.Login.click();
 	}
 	
-	 // Returns a message indicating login success
 	public String loginSuccess() {
 		return loginLocators.LoginSuccess.getText();
 	}
 	
-
-	 // Performs the complete login process
-
-	
-	//Login Page, Enter MobileNumber, Enter OTP
-
 	public void Login() {
 		this.clickLogin();
 		this.EnterNumber();
 		this.ClickGenerateOTP();
 		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
 		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),\"your\")]")));
-		this.setOtP();
+
 	}
+	
+	public void trueLogin() {
+		this.Login();
+		 OTP = this.getOtp();
+		 this.setOtP(OTP);
+	}
+	
+	public void falseLogin() {
+		this.Login();
+		this.setOtP("000000");
+	}
+	
+	public void ClickToFalseLogin() {
+		loginLocators.Login.click();
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Invalid OTP\"]")));
+		
+	}
+	
 }

@@ -43,10 +43,9 @@ public class HelperClass {
 		if(driver==null) {
 			//driver.close();
 			//driver.quit();
+			driver.close();
 		}
 
-		//driver.close();
-				//helperClass = null;
 	}
 	
 }
