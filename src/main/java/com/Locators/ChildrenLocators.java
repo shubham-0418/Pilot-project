@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.locators.RelativeLocator;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.util.HelperClass;
@@ -57,11 +58,12 @@ public class ChildrenLocators {
 	@FindBy(xpath=("//div[@id='shopping-cart-box-ontop']"))
 	public  WebElement clickonMainCart;
 	
-	@FindBy(xpath = "//div[@class='heading-counter warning']")
+	@FindBy(xpath = "//*[contains(text(),\"30%\")]")
 	public WebElement validateMaincart;
 		
     // Static method to locate and return the "Delete" element
 	public static  WebElement DeleteItem(){
+	HelperClass.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Action\"]")));
 		 WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
 		return Delete;
 	}

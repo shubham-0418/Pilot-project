@@ -64,7 +64,7 @@ public class AddressDetailsActions {
 	}
 	
 	public void addAddress() {
-		File file = new File("C:\\Users\\shupatil\\eclipse-workspace\\BuyBooksIndia\\src\\test\\resources\\PropertiesFile\\PublisherDetails.properties");
+		File file = new File("src/test/resources/PropertiesFile/PublisherDetails.properties");
 		FileInputStream fileInput = null;
 		try {
 			fileInput = new FileInputStream(file); 
