@@ -9,7 +9,7 @@ import com.util.HelperClass;
 
 public class LoginLocators {
 
-	//Locator for login button
+    // WebElements representing various elements on the login page
 	@FindBy(xpath = "//a[text()=\" Login\"]")
 	public WebElement btnLogin;
 	
@@ -21,6 +21,7 @@ public class LoginLocators {
 	@FindBy(xpath = "//*[@id=\"otp\"]")
 	public WebElement GenerateOTP;
 	
+    // Static method to locate and return the OTP element
 	public static WebElement GetOTP(){
 		 WebElement GetOTP1 = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[contains(text(),\"Fill in the Details\")]")));
 		return GetOTP1;

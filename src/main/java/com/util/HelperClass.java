@@ -11,7 +11,7 @@ public class HelperClass {
 	private static HelperClass helperClass;
 	
 	private static WebDriver driver;
-	private static WebDriverWait wait;
+	public static WebDriverWait wait;
 	private static int TIMEOUT = 10;
 	
 	HelperClass(){
@@ -44,8 +44,9 @@ public class HelperClass {
 			//driver.close();
 			//driver.quit();
 		}
-//		driver.close();
-//		helperClass = null;
+
+		//driver.close();
+				//helperClass = null;
 	}
 	
 }

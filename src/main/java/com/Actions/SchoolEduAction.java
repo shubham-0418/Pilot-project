@@ -26,12 +26,15 @@ public class SchoolEduAction {
 //	ExtentTest test;
 	SchoolEduLocators schooledulocators = null;
 	
+	// Constructor initializes schooledulocators and sets up PageFactory
 	public SchoolEduAction() {
 		this.schooledulocators = new SchoolEduLocators();
 		PageFactory.initElements(HelperClass.getDriver(), schooledulocators);
 	}
 	
+
 	//Click on ShopbyClass
+
 	public void moveToSchoolEdu() throws InterruptedException {
 		Actions act = new Actions(HelperClass.getDriver());
 		act.moveToElement(schooledulocators.schoolEdu).perform();
@@ -39,6 +42,7 @@ public class SchoolEduAction {
 		schooledulocators.shopclass.click();
 	}
 	
+	// Clicks on "Class 6" within the School Education section
 	public void clickShopClass6() {
 		schooledulocators.class6.click();
 	}
@@ -47,7 +51,11 @@ public class SchoolEduAction {
 		schooledulocators.sortOption.click();
 	}
 	
+
+	// Clicks on "Newest" in the School Education section and retrieves the text
+
 	public void clickonNewest() throws InterruptedException {
+
 		schooledulocators.newest.click();
 		Thread.sleep(1000);
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -55,14 +63,18 @@ public class SchoolEduAction {
 		schooledulocators.assertnew.getText();
 	}
 	
+    // Returns the text after clicking on "Newest" in the School Education section
 	public String clickonNewestTxt() {
 		return schooledulocators.assertnew.getText();
 	}
 	
+    // Clicks on "Class 10" within the School Education section
 	public void clickShopClass10() {
 		schooledulocators.class10.click();
 	}
 	
+
+  
 	//Check on Price Low to high
 	public void clickonPriceLH() throws InterruptedException {
 		schooledulocators.LowtoHigh.click();
@@ -75,7 +87,8 @@ public class SchoolEduAction {
 		}
 	}
 	
-	//Click on Shop By Board
+
+    // Moves the mouse pointer to the "School Education" element and clicks on "Shop Board"
 	public void movesToSchoolEduBrd() throws InterruptedException {
 		Actions act1 = new Actions(HelperClass.getDriver());
 		act1.moveToElement(schooledulocators.schoolEdu).perform();
@@ -83,13 +96,17 @@ public class SchoolEduAction {
 		schooledulocators.shopboard.click();
 	}
 	
+
 	//Click on CBSE Books
+
 	public void clickCBSE() {
 		schooledulocators.cbse.click();
 		schooledulocators.sortOption.click();
 	}
 	
-	//Check for discount Low to High
+
+    // Clicks on "Discount Low to High" and takes a screenshot
+
 	public void clickonDiscLH() throws InterruptedException, IOException {
 		schooledulocators.DLowtoHigh.click();
 		Thread.sleep(1000);
@@ -99,6 +116,7 @@ public class SchoolEduAction {
 		
 	}
 	
+    // Clicks on "Discount High to Low" and retrieves the sorted discounts
 	public void clickonDiscHL() {
 		schooledulocators.DHightoLow.click();
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
