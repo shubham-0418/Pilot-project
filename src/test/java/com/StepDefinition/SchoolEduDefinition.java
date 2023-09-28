@@ -39,7 +39,7 @@ public class SchoolEduDefinition {
 	}
 
 	@Then("User Selects Newest and assert text")
-	public void user_selects_newest_and_assert_text() {
+	public void user_selects_newest_and_assert_text() throws InterruptedException {
 		schoolEduAction.clickonNewest();
 		Assert.assertTrue(schoolEduAction.clickonNewestTxt().contains("CLASS 6"));
 
@@ -61,7 +61,7 @@ public class SchoolEduDefinition {
 	}
 
 	@Then("User Selects Price:Low-High and Print Price of Books")
-	public void user_selects_price_low_high_and_print_price_of_books() {
+	public void user_selects_price_low_high_and_print_price_of_books() throws InterruptedException {
 	    schoolEduAction.clickonPriceLH();
 	}
 
