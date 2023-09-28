@@ -38,7 +38,7 @@ public class SchoolEduAction {
 	public void moveToSchoolEdu() throws InterruptedException {
 		Actions act = new Actions(HelperClass.getDriver());
 		act.moveToElement(schooledulocators.schoolEdu).perform();
-		HelperClass.explicitWait().until(ExpectedConditions.elementToBeClickable(schooledulocators.shopclass));
+		HelperClass.wait.until(ExpectedConditions.elementToBeClickable(schooledulocators.shopclass));
 		schooledulocators.shopclass.click();
 	}
 	
@@ -92,7 +92,7 @@ public class SchoolEduAction {
 	public void movesToSchoolEduBrd() throws InterruptedException {
 		Actions act1 = new Actions(HelperClass.getDriver());
 		act1.moveToElement(schooledulocators.schoolEdu).perform();
-		HelperClass.explicitWait().until(ExpectedConditions.elementToBeClickable(schooledulocators.shopboard));
+		HelperClass.wait.until(ExpectedConditions.elementToBeClickable(schooledulocators.shopboard));
 		schooledulocators.shopboard.click();
 	}
 	

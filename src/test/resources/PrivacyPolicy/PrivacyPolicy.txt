@@ -37,47 +37,47 @@ OFF
 OFF
 Shipping Policy
 Return Policy
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Update Account Information", "Login Using Mobile number and otp")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Manage Address", "Login Using Mobile number and otp")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Validate the Privacy Policy", "Validating the Company Feature")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ReturnPolicy feature", "Validating the Support section")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books and print price of books for class10", "Navigate to School Education")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
-        Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Validating Cart and Deleting Item in Cart", "Children and Young Adults Section on webpage")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Login", "Login Using Mobile number and otp")
         Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User validates the My wishlist", "Validating the wishlist")
+        Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates the Terms and condition feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ShippingandDelivery feature", "Validating the Support section")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Validate the Disclaimer Page", "Validating the Company Feature")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books for class6", "Navigate to School Education")
-        Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates the About Us feature", "Validating the Company Feature")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books for class6", "Navigate to School Education")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Fill the Details of Publisher Company", "Validating the Company Feature")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Should Fill the Detials in ContactUs Page", "Validating the Company Feature")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates How to Order feature", "Validating the Support section")
-        Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Poems and  Rhymes", "Children and Young Adults Section on webpage")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Essays and Letters", "Children and Young Adults Section on webpage")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User validates the My wishlist", "Validating the wishlist")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Update Account Information", "Login Using Mobile number and otp")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books and print price of books for class10", "Navigate to School Education")
-        Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ShippingandDelivery feature", "Validating the Support section")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User able to sort books based on discount for CBSE Board", "Navigate to School Education")
         Runs Cucumber Scenarios
 PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Drawing and Coloring Books", "Children and Young Adults Section on webpage")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Validating Cart and Deleting Item in Cart", "Children and Young Adults Section on webpage")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Browsing Poems and  Rhymes", "Children and Young Adults Section on webpage")
         Runs Cucumber Scenarios
-PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("Manage Address", "Login Using Mobile number and otp")
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates ReturnPolicy feature", "Validating the Support section")
+        Runs Cucumber Scenarios
+PASSED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("User Validates How to Order feature", "Validating the Support section")
         Runs Cucumber Scenarios
 FAILED: io.cucumber.testng.AbstractTestNGCucumberTests.runScenario("False Login", "Login Using Mobile number and otp")
         Runs Cucumber Scenarios
@@ -87,9 +87,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7aeba10583174dd3530881ae87f0eeaf, findElement {using=xpath, value=//strong[text()="Account Information"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\shupatil\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59640/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7aeba10583174dd3530881ae87f0eeaf
+Command: [a8d819cb9208f5e4746fcdefe8dfe221, findElement {using=xpath, value=//strong[text()="Account Information"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\shupatil\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51960}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51960/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8d819cb9208f5e4746fcdefe8dfe221
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

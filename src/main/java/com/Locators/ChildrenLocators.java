@@ -63,8 +63,7 @@ public class ChildrenLocators {
 		
     // Static method to locate and return the "Delete" element
 	public static  WebElement DeleteItem(){
-	HelperClass.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Action\"]")));
-		 WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
+			 WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
 		return Delete;
 	}
 }

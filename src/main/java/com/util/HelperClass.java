@@ -25,9 +25,7 @@ public class HelperClass {
 		driver.get(Url);
 	}
 	
-	public static WebDriverWait explicitWait() {
-		return wait;
-	}
+
 	
 	public static WebDriver getDriver() {
 		return driver;
