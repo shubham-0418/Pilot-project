@@ -9,12 +9,15 @@ import com.util.HelperClass;
 
 public class LoginLocators {
 
+	//Locator for login button
 	@FindBy(xpath = "//a[text()=\" Login\"]")
 	public WebElement btnLogin;
 	
+	//Locator for MobileNumber
 	@FindBy(xpath = "//*[@id=\"reg_phone\"]")
 	public WebElement MobileNumber;
 	
+	//Locator for OTP
 	@FindBy(xpath = "//*[@id=\"otp\"]")
 	public WebElement GenerateOTP;
 	
