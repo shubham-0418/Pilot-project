@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class SchoolEduLocators {
 	
-	
+    // WebElements representing various elements on the School Education page
 	@FindBy(linkText = "School Education")
 	public WebElement schoolEdu;
 	// = driver.findElement(By.linkText("School Education"));

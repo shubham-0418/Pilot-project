@@ -16,23 +16,28 @@ public class CompanyAction {
 	CompanyLocators companyLocators = null;
 	String publisherName,publisherCity,publisherEmail,publisherContact,publisherMobile,publisherPhone,publisherSubject,publisherComment;
 	
+	 // Constructor initializes companyLocators and sets up PageFactory
 	public CompanyAction() {
 		this.companyLocators = new CompanyLocators();
 		PageFactory.initElements(HelperClass.getDriver(), companyLocators);
 	}
 	
+	// Clicks on the "About Us" link
 	public void clickonAboutUs() {
 		companyLocators.aboutus.click();
 	}
 	
+	// Returns text from the "About Us" section
 	public String viewonAboutUs() {
 		return companyLocators.assertaboutus.getText();
 	}
 	
+	// Clicks on the "Publisher Partner" link
 	public void clickonPublisherPartner() {
 		companyLocators.publisherpartner.click();
 	}
 	
+	// Sets the publisher's name
 	public void setPublisherName(String publisherName) {
 		companyLocators.publisherTxtname.sendKeys(publisherName);
 	}
@@ -41,34 +46,42 @@ public class CompanyAction {
 		companyLocators.publisherTxtPersoncontact.sendKeys(publisherContact);
 	}
 	
+	 // Sets the contact person's name
 	public void setCityName(String publisherCity) {
 		companyLocators.publisherTxtcity.sendKeys(publisherCity);
 	}
 	
+	// Sets the city name
 	public void setEmail(String publisherEmail) {
 		companyLocators.publisherTxtemail.sendKeys(publisherEmail);
 	}
 	
+	 // Sets the publisher's email
 	public void setMobile(String publisherMobile) {
 		companyLocators.publisherTxtmob.sendKeys(publisherMobile);
 	}
 	
+	// Sets the publisher's mobile number
 	public void setPhone(String publisherPhone) {
 		companyLocators.publisherTxtphone.sendKeys(publisherPhone);
 	}
 	
+	// Sets the subject for the publisher
 	public void setSubject(String publisherSubject) {
 		companyLocators.publisherTxtsub.sendKeys(publisherSubject);
 	}
 	
+	// Sets comments for the publisher
 	public void setComment(String publisherComment) {
 		companyLocators.publisherTxtcmt.sendKeys(publisherComment);
 	}
 	
+	// Clicks the "Submit" button for publisher details
 	public void ClickSubmit() {
 		companyLocators.publisherSubmit.click();
 	}
 	
+	// Reads publisher details from a properties file and submits them
 	public void EnterPublisherDetails() {
 		File file = new File("C:\\Users\\sangadi\\eclipse-workspace\\BuyBooksIndia\\src\\test\\resources\\PropertiesFile\\PublisherDetails.properties");
 		FileInputStream fileInput = null;
@@ -156,6 +169,7 @@ public class CompanyAction {
 		return companyLocators.contactTxtnum.getText();
 	}
 	
+	
 	public void clickonPrivacyPolicy() {
 		companyLocators.privacyplcy.click();
 	}
@@ -171,11 +185,15 @@ public class CompanyAction {
 		}
 	}
 	
+	// Clicks on the "Disclaimer" link
 	public void clickonDisclaimer() {
 		companyLocators.disclaimer.click();
 	}
+	
+	 // Validates the text in the disclaimer section
 	public String validateDisclaimer() {
 		return companyLocators.viewDisclaimer.getText();
 	}
 
 }
+
