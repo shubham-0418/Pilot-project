@@ -6,7 +6,9 @@ package com.Actions;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -23,6 +25,8 @@ import com.util.HelperClass;
 
 //Implementing action class for  SchoolEduAction
 public class SchoolEduAction {
+	static SimpleDateFormat date = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+    static String timeStamp = date.format(new Date());
 	SchoolEduLocators schooledulocators = null;
 	
 	// Constructor initializes schooledulocators and sets up PageFactory
@@ -74,7 +78,7 @@ public class SchoolEduAction {
 		Thread.sleep(1000);
 		for(int i=0;i<price.size();i++) {
 			String sortedPrice = price.get(i).getText();
-			System.out.println(sortedPrice);
+			//System.out.println(sortedPrice);
 		}
 	}
 	
@@ -97,7 +101,9 @@ public class SchoolEduAction {
 		schooledulocators.DLowtoHigh.click();
 		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		File src = ((TakesScreenshot)HelperClass.getDriver()).getScreenshotAs(OutputType.FILE);
-		Files.copy(src,new File("src/test/resources/Screenshots/DiscLowtotHigh.png") );	
+		String FileSource = "src/test/resources/Screenshots/"+timeStamp+"DiscLowtotHigh.png";
+		System.out.println(FileSource);
+		Files.copy(src,new File(FileSource) );	
 	}
 	
     // Clicks on "Discount High to Low" and retrieves the sorted discounts
@@ -107,7 +113,7 @@ public class SchoolEduAction {
 		List<WebElement> dprice = HelperClass.getDriver().findElements(By.xpath("//div[@class='price-percent-reduction3']"));
 		for(int i=0;i<dprice.size();i++) {
 			String sortedDisc = dprice.get(i).getText();
-			System.out.println(sortedDisc);
+			//System.out.println(sortedDisc);
 		}
 	}
 	
