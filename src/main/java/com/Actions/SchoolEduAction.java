@@ -23,7 +23,6 @@ import com.util.HelperClass;
 
 //Implementing action class for  SchoolEduAction
 public class SchoolEduAction {
-//	ExtentTest test;
 	SchoolEduLocators schooledulocators = null;
 	
 	// Constructor initializes schooledulocators and sets up PageFactory
@@ -32,9 +31,7 @@ public class SchoolEduAction {
 		PageFactory.initElements(HelperClass.getDriver(), schooledulocators);
 	}
 	
-
 	//Click on ShopbyClass
-
 	public void moveToSchoolEdu() throws InterruptedException {
 		Actions act = new Actions(HelperClass.getDriver());
 		act.moveToElement(schooledulocators.schoolEdu).perform();
@@ -47,20 +44,16 @@ public class SchoolEduAction {
 		schooledulocators.class6.click();
 	}
 	
+	//Clicks on the sort option
 	public void clickShopSort() {
 		schooledulocators.sortOption.click();
 	}
 	
-
 	// Clicks on "Newest" in the School Education section and retrieves the text
-
 	public void clickonNewest() throws InterruptedException {
-
+		
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		schooledulocators.newest.click();
-		Thread.sleep(1000);
-		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		test.log(Status.INFO, "Asserting the price of new books");
-		schooledulocators.assertnew.getText();
 	}
 	
     // Returns the text after clicking on "Newest" in the School Education section
@@ -73,12 +66,10 @@ public class SchoolEduAction {
 		schooledulocators.class10.click();
 	}
 	
-
-  
 	//Check on Price Low to high
 	public void clickonPriceLH() throws InterruptedException {
 		schooledulocators.LowtoHigh.click();
-		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		List<WebElement> price = HelperClass.getDriver().findElements(By.xpath("//span[@class='price product-price']"));
 		Thread.sleep(1000);
 		for(int i=0;i<price.size();i++) {
@@ -87,7 +78,6 @@ public class SchoolEduAction {
 		}
 	}
 	
-
     // Moves the mouse pointer to the "School Education" element and clicks on "Shop Board"
 	public void movesToSchoolEduBrd() throws InterruptedException {
 		Actions act1 = new Actions(HelperClass.getDriver());
@@ -96,36 +86,29 @@ public class SchoolEduAction {
 		schooledulocators.shopboard.click();
 	}
 	
-
 	//Click on CBSE Books
-
 	public void clickCBSE() {
 		schooledulocators.cbse.click();
 		schooledulocators.sortOption.click();
 	}
 	
-
     // Clicks on "Discount Low to High" and takes a screenshot
-
 	public void clickonDiscLH() throws InterruptedException, IOException {
 		schooledulocators.DLowtoHigh.click();
-		Thread.sleep(1000);
-		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		File src = ((TakesScreenshot)HelperClass.getDriver()).getScreenshotAs(OutputType.FILE);
-		Files.copy(src,new File("src/test/resources/Screenshots/DiscLowtotHigh.png") );
-		
+		Files.copy(src,new File("src/test/resources/Screenshots/DiscLowtotHigh.png") );	
 	}
 	
     // Clicks on "Discount High to Low" and retrieves the sorted discounts
 	public void clickonDiscHL() {
 		schooledulocators.DHightoLow.click();
-		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		HelperClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		List<WebElement> dprice = HelperClass.getDriver().findElements(By.xpath("//div[@class='price-percent-reduction3']"));
 		for(int i=0;i<dprice.size();i++) {
 			String sortedDisc = dprice.get(i).getText();
 			System.out.println(sortedDisc);
 		}
 	}
-	
 	
 }

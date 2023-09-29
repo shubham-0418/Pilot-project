@@ -24,16 +24,19 @@ public class CompanyAction {
 		PageFactory.initElements(HelperClass.getDriver(), companyLocators);
 	}
 	
+	//Clicking on about us by scrolling down
 	public void clickonAboutUs() {
 		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", companyLocators.aboutus);
 		companyLocators.aboutus.click();
 	}
 	
+	//Inside about us page 
 	public String viewonAboutUs() {
 		return companyLocators.assertaboutus.getText();
 	}
 	
+	//Clicking on publisher partner by scrolling down
 	public void clickonPublisherPartner() {
 		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", companyLocators.publisherpartner);
@@ -113,6 +116,7 @@ public class CompanyAction {
 		 this.ClickSubmit();
 	}
 	
+	//Clicking on contact us by scrolling down the web page
 	public void clickonContactUs() {
 		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", companyLocators.contactus);
@@ -166,6 +170,7 @@ public class CompanyAction {
 		return companyLocators.contactTxtnum.getText();
 	}
 	
+	//Clicking on privacy policy
 	public void clickonPrivacyPolicy() {
 		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", companyLocators.privacyplcy);
@@ -183,6 +188,7 @@ public class CompanyAction {
 		}
 	}
 	
+	//Clicking on Disclaimer by scrolling down 
 	public void clickonDisclaimer() {
 		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", companyLocators.disclaimer);
