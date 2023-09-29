@@ -1,5 +1,6 @@
 Feature: Validating the wishlist
 
+@MyWishlist
 Scenario: User validates the My wishlist
 		Given User should be on homepage "https://www.buybooksindia.com/"
     When User clicks the search bar
