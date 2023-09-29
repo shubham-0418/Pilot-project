@@ -6,11 +6,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.Locators.ChildrenLocators;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.util.HelperClass;
 
 import lombok.experimental.Helper;
 
 public class ChildrenActions {
+	ExtentReports report;
+	ExtentTest test;
 	 ChildrenLocators childrenLocators = null;
 	 
 	// Constructor initializes childrenLocators and sets up PageFactory
@@ -87,6 +92,7 @@ public class ChildrenActions {
 	 // Adds a poem or rhyme book to the cart
 	 public void addtoCartPoemsRhymes() {
 		 childrenLocators.addtoCartPoemRhymes.click();
+		 
 	 }
 	 
 	// Clicks on the main cart link

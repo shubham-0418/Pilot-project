@@ -52,7 +52,7 @@ public class SupportDefinition {
 	@Then("User Should Able to See the ShippingandDelivery")
 	public void user_should_able_to_see_the_shippingand_delivery() {
 		String msg = supportAction.assertShipping();
-		System.out.println(msg);
+		
 	}
 
     // Step 8: User navigates to Support and clicks on Return Policy
@@ -65,7 +65,7 @@ public class SupportDefinition {
 	@Then("User Should Able to See the ReturnPolicy")
 	public void user_should_able_to_see_the_return_policy() {
 		String str = supportAction.assertReturn();
-		System.out.println(str);
+		
 	}
 	
     // Additional Step: User should be able to see queries 

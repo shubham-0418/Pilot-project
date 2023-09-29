@@ -22,7 +22,7 @@ public class SearchActions {
 	static String details,urls,BookName;
 	
 
-	static String excelFilePath = "C:\\Users\\shupatil\\Downloads\\Book-2.xls";
+	static String excelFilePath = "src/test/resources/BookDetails.xls";
 	static String sheetName = "Sheet1";
 	public SearchActions() {
 		searchLocators  = new SearchLocators();
