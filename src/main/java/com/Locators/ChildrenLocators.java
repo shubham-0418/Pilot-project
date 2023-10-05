@@ -58,7 +58,7 @@ public class ChildrenLocators {
 	@FindBy(xpath=("//div[@id='shopping-cart-box-ontop']"))
 	public  WebElement clickonMainCart;
 	
-	@FindBy(xpath = "//*[contains(text(),\"30%\")]")
+	@FindBy(xpath = "//*[contains(text(),\"13%\")]")
 	public WebElement validateMaincart;
 		
     // Static method to locate and return the "Delete" element
