@@ -48,8 +48,9 @@ public class AccountInforamtionActions {
 	}
 	
 	public void setEmail(String string) {
-		JavascriptExecutor jss = (JavascriptExecutor)HelperClass.getDriver();
-		jss.executeScript("window.scrollBy(0,accountInformationLocators.Email)", "");
+		JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
+		js.executeScript("arguments[0].scrollIntoView();",accountInformationLocators.Email);
+
 		
 		accountInformationLocators.Email.clear();
 		accountInformationLocators.Email.sendKeys(string);
