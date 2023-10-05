@@ -36,4 +36,7 @@ public class LoginLocators {
 	
 	@FindBy(xpath = "//strong[text()=\"Account Information\"]")
 	public WebElement LoginSuccess;
+	
+	@FindBy(xpath = "//p[text()=\"Invalid OTP\"]")
+	public WebElement FalseLogin;
 }

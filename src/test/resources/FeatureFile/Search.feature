@@ -1,6 +1,6 @@
 Feature:  Validating search bar
   
-
+@SearchBarValidation
   Scenario Outline: Validates Search Bar 
     Given User should be on homepage "https://www.buybooksindia.com/"
   	When User clicks the search bar

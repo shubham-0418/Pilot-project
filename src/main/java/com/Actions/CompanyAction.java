@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +17,8 @@ import com.util.HelperClass;
 
 
 public class CompanyAction {
+	 static SimpleDateFormat date = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+     static String timeStamp = date.format(new Date());
 	CompanyLocators companyLocators = null;
 	String publisherName,publisherCity,publisherEmail,publisherContact,publisherMobile,publisherPhone,publisherSubject,publisherComment;
 	
@@ -179,7 +183,7 @@ public class CompanyAction {
 	public void readPrivacyPolicy() {
 		String policyTxt = companyLocators.privacyTxt.getText();
 		try {
-			PrintStream ps = new PrintStream(new File("src\\test\\resources\\PrivacyPolicy\\PrivacyPolicy.txt"));
+			PrintStream ps = new PrintStream(new File("src\\test\\resources\\PrivacyPolicy\\"+timeStamp+"PrivacyPolicy.txt"));
 			System.setOut(ps);
 			ps.println(policyTxt);
 		}

@@ -10,14 +10,9 @@ public class RunnerClass {
 			glue="com.StepDefinition",
 			plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 			tags= ""
-
 			)
 	public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
-//		@Override
-//	    @DataProvider(parallel = true)
-//	    public Object[][] scenarios() {
-//	        return super.scenarios();
-//		}
+
 
 	}
 }

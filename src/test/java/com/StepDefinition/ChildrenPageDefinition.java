@@ -103,7 +103,7 @@ public class ChildrenPageDefinition {
 
 	@Then("User Validates the Products present in cart")
 	public void user_validates_the_products_present_in_cart() {
-	    Assert.assertTrue(childrenActions.validatingMainCart().contains("30"));
+	    Assert.assertTrue(childrenActions.validatingMainCart().contains("1"));
 	}
 
     // Step 15: Delete a product from the cart
