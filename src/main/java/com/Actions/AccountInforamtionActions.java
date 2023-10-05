@@ -49,7 +49,7 @@ public class AccountInforamtionActions {
 	
 	public void setEmail(String string) {
 		JavascriptExecutor jss = (JavascriptExecutor)HelperClass.getDriver();
-		jss.executeScript("window.scrollBy(0,200)", "");
+		jss.executeScript("window.scrollBy(0,accountInformationLocators.Email)", "");
 		
 		accountInformationLocators.Email.clear();
 		accountInformationLocators.Email.sendKeys(string);
