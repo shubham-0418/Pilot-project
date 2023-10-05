@@ -47,7 +47,7 @@ public class LoginPageDefination {
 	@Then("Validate the User Login")
 	public void validate_the_user_login() {
 		loginActions.ClickToFalseLogin();
-		Assert.assertEquals(loginActions.loginSuccess(), "Account Information");
+		Assert.assertEquals(loginActions.FalseLogin(), "Account Information");
 	}
 
 	@Given("user should be Logged In")

@@ -10,24 +10,30 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.Locators.LoginLocators;
 import com.util.HelperClass;
 
+//Public class representing actions related to user login functionality
 public class LoginActions {
 	LoginLocators loginLocators = null;
+	// Static mobile number used for login
 	static String MobileNumber = "8050511235";
 	static String OTP;
 
+	// Constructor for LoginActions class, initializes LoginLocators using PageFactory
 	public LoginActions() {
 		this.loginLocators = new LoginLocators();
 		PageFactory.initElements(HelperClass.getDriver(), loginLocators);		
 	}
 	
+	// Method to click on the login button
 	public void clickLogin() {
 		loginLocators.btnLogin.click();
 	}
 	
+	// enter mobile number in the login form
 	public void EnterNumber() {
 		loginLocators.MobileNumber.sendKeys(MobileNumber);
 	}
 	
+	// click on the 'Generate OTP' button
 	public void ClickGenerateOTP() {
 		loginLocators.GenerateOTP.click();
 	}
@@ -45,6 +51,10 @@ public class LoginActions {
 	
 	public String loginSuccess() {
 		return loginLocators.LoginSuccess.getText();
+	}
+	
+	public String FalseLogin() {
+		return loginLocators.FalseLogin.getText();
 	}
 	
 	public void Login() {
