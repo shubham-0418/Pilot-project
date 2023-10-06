@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.util.HelperClass;
 
 public class ChildrenLocators {
+	public static WebElement Delete;
 	
     // WebElements representing various elements on the Children & Young Adult page
 	@FindBy(xpath = "//a[contains(text(),'Children & Young Adult ')]")
@@ -64,11 +65,10 @@ public class ChildrenLocators {
 		
     // Static method to locate and return the "Delete" element
 	public static  WebElement DeleteItem(){
-		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
-			js.executeScript("window.scrollBy(0,300)","");
-			 //WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
-			WebElement Delete = HelperClass.getDriver().findElement(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]"));
-			
-			return Delete;
+		JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
+		js.executeScript("window.scrollBy(0,300)","");
+		//WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
+		Delete = HelperClass.getDriver().findElement(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]"));			
+		return Delete;
 	}
 }
