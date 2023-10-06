@@ -63,7 +63,7 @@ public class ChildrenLocators {
 	@FindBy(xpath=("//div[@id='shopping-cart-box-ontop']"))
 	public  WebElement clickonMainCart;
 	
-	@FindBy(xpath = "//*[contains(text(),\"Shopping Cart Summary\")]")
+	@FindBy(xpath = "//*[contains(text(),\"Shipping Address\")]")
 	public WebElement validateMaincart;
 	
 	
