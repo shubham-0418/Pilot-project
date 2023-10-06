@@ -1,5 +1,7 @@
 package com.Locators;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.locators.RelativeLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.util.HelperClass;
 
@@ -67,6 +70,8 @@ public class ChildrenLocators {
 	public static  WebElement DeleteItem(){
 		JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
 		js.executeScript("window.scrollBy(0,300)","");
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]")));
 		//WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
 		Delete = HelperClass.getDriver().findElement(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]"));			
 		return Delete;

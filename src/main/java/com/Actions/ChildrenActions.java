@@ -109,7 +109,7 @@ public class ChildrenActions {
 	// Deletes an item from the cart
 	 public void deletingItemincart() {
 		
-		 childrenLocators.DeleteItem().click();
+		 ChildrenLocators.Delete.click();
 		 Alert al = HelperClass.getDriver().switchTo().alert();
 		 al.accept();
 	 }	 
