@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.util.HelperClass;
 
 public class ChildrenLocators {
-	public static WebElement Delete;
+	
 	
     // WebElements representing various elements on the Children & Young Adult page
 	@FindBy(xpath = "//a[contains(text(),'Children & Young Adult ')]")
@@ -65,15 +65,9 @@ public class ChildrenLocators {
 	
 	@FindBy(xpath = "//*[contains(text(),\"13%\")]")
 	public WebElement validateMaincart;
-		
-    // Static method to locate and return the "Delete" element
-	public static  WebElement DeleteItem(){
-		JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
-		js.executeScript("window.scrollBy(0,300)","");
-		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]")));
-		//WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
-		Delete = HelperClass.getDriver().findElement(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]"));			
-		return Delete;
-	}
+	
+	
+	@FindBy(xpath = "//i[@class=\"fa fa-trash-o fa-lg\"]")
+	public WebElement Delete;
+	
 }
