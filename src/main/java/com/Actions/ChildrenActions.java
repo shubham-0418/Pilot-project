@@ -108,8 +108,7 @@ public class ChildrenActions {
 	 
 	// Deletes an item from the cart
 	 public void deletingItemincart() {
-		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
-			js.executeScript("window.scrollBy(0,300)","");
+		
 		 childrenLocators.DeleteItem().click();
 		 Alert al = HelperClass.getDriver().switchTo().alert();
 		 al.accept();

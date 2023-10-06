@@ -1,6 +1,7 @@
 package com.Locators;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.locators.RelativeLocator;
@@ -63,6 +64,8 @@ public class ChildrenLocators {
 		
     // Static method to locate and return the "Delete" element
 	public static  WebElement DeleteItem(){
+		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
+			js.executeScript("window.scrollBy(0,300)","");
 			 WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
 		return Delete;
 	}
