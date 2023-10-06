@@ -1,6 +1,7 @@
 package com.Actions;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -107,6 +108,8 @@ public class ChildrenActions {
 	 
 	// Deletes an item from the cart
 	 public void deletingItemincart() {
+		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
+			js.executeScript("window.scrollBy(0,300)","");
 		 childrenLocators.DeleteItem().click();
 		 Alert al = HelperClass.getDriver().switchTo().alert();
 		 al.accept();
