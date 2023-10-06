@@ -110,6 +110,8 @@ public class ChildrenActions {
 	 public void deletingItemincart() {
 		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
 		 js.executeScript("window.scrollBy(0,300)","");
+		 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]")));
 		 childrenLocators.Delete.click();
 		 Alert al = HelperClass.getDriver().switchTo().alert();
 		 al.accept();
