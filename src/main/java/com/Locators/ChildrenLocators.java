@@ -66,7 +66,9 @@ public class ChildrenLocators {
 	public static  WebElement DeleteItem(){
 		 JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
 			js.executeScript("window.scrollBy(0,300)","");
-			 WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
-		return Delete;
+			 //WebElement Delete = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("div")).below(By.xpath("//*[text()=\"Action\"]")));
+			WebElement Delete = HelperClass.getDriver().findElement(By.xpath("//i[@class=\"fa fa-trash-o fa-lg\"]"));
+			
+			return Delete;
 	}
 }
