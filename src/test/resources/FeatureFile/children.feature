@@ -27,7 +27,7 @@ Scenario: Browsing Essays and Letters
     Then add to cart poem
     
 Scenario: Validating Cart and Deleting Item in Cart
-#		Given user is on homepage of "https://www.buybooksindia.com/"
+		Given user is on homepage of "https://www.buybooksindia.com/"
 		When User Clicks on MyCart
 		Then User Validates the Products present in cart
 		Then User deletes the product
